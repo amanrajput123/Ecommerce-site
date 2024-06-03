@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerece Website Example</title>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+
+        <box id="navbar">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsHCzcmpFlnL2ptIAqpHeX1EX9e4GvhbUUNA&s" alt="">
+           <div>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Products</a>
+            <a href="./login.html">Login</a>
+           </div>
+           <i class="ri-shopping-cart-fill"></i>
+        </box>
+
+        <div id="filter-box">
+            <div>
+                <select name="price-sorter" id="sortByPrice" onchange="sortByPrice()">
+                    <option value="">Sort By Price</option>
+                    <option value="htl">Hight To Low</option>
+                    <option value="lth">Low To High</option>
+                </select>
+    
+                <select name="name-sorter" id="sortByName" onchange="sortByName()">
+                    <option value="">Sort By Name</option>
+                    <option value="asc">Ascending</option>
+                    <option value="dec">Descending</option>
+                </select>
+    
+                <select name="category-sorter" id="fiterByCategory" onchange="filterByCategory()">
+                    <option value="">Filter By Category</option>
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="ele">electronics</option>
+                    <option value="jwl">Jewelery</option>
+                </select>
+            </div>
+            <button onclick="resetFun()">Reset</button>
+        </div>
+
+        <div id="products">
+
+        </div>
+        
+    </body>
+    <script src="./scripts/index.js"></script>
+</html>

@@ -1,0 +1,52 @@
+
+#register-container{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+}
+#register-container>form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 12px;
+}
+#register-container>form>input{
+    padding: 10px;
+}
+#register-container>h3{
+    text-align: center;
+    font-size: 25px;
+}
+#register-container>form>label{
+    font-size: 20px;
+    
+}
+#register-container>form>input:focus{
+    outline-color: red;
+}
+input[type="submit"]{
+    background-color: lime;
+    font-size: 20px;
+    border: none;
+}
+#register-container>form>a{
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* error */
+#error_email{
+    display: none;
+    color: red;
+}
+#error_password{
+    display: none;
+    color: red;
+}
